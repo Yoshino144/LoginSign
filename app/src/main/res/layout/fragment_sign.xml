@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/back_login"
+            android:layout_marginStart="20dp"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:src="@mipmap/back_while_one" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        app:cardCornerRadius="7dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/username"/>
+
+                <EditText
+                    android:textSize="15sp"
+                    android:id="@+id/username_sign"
+                    android:background="@null"
+                    android:hint="用户名"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorGrey200"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/password"/>
+
+                <EditText
+                    android:textSize="15sp"
+                    android:id="@+id/password_sign"
+                    android:background="@null"
+                    android:hint="密码"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorGrey200"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/card_ph_pw_sign"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/password"/>
+
+                <EditText
+                    android:textSize="15sp"
+                    android:id="@+id/password_sign_two"
+                    android:background="@null"
+                    android:hint="确认密码"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorGrey200"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/username"/>
+
+                <EditText
+                    android:textSize="15sp"
+                    android:id="@+id/sign_email"
+                    android:background="@null"
+                    android:hint="邮箱"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorGrey200"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ph_hui"/>
+
+                <EditText
+                    android:textSize="15sp"
+                    android:id="@+id/yzm"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/send_sign"
+                    android:layout_width="90dp"
+                    android:text="发送验证码"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/sign"
+            android:gravity="center"
+            android:padding="1dp"
+            android:background="@drawable/login_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/sign_text"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="2dip"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit_sign"
+                android:visibility="gone"
+                style="@style/SpinKitView.Large.DoubleBounce"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/pure_white" />
+
+            <com.cat.login.View.TickView
+                android:visibility="gone"
+                android:id="@+id/tickView"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/forget"
+            android:text="注册代表同意接受条款"
+            android:textSize="18sp"
+            android:autoLink="all"
+            android:textColor="@color/pure_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ani_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03DAC5</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--Main页-->
+    <color name="pure_white">#ffffff</color>
+    <color name="pure_black">#000000</color>
+
+    <color name="card_white_shense_to_hui">#ffffff</color>
+
+    <!--PC-->
+    <color name="first_purple">#919EFF</color>
+    <color name="pc_green_two">#7abd9a</color>
+    <color name="pc_green_three">#97D8B6</color>
+    <color name="pc_green_one">#50c7a2</color>
+    <color name="pc_shan">#fe6f61</color>
+    <color name="pc_blue">#6698cb</color>
+    <color name="pc_cyan">#7fccde</color>
+
+    <!--灰色-->
+    <color name="colorGrey200">#f4f6f7</color>
+    <color name="colorGrey300">#e0e0e0</color>
+    <color name="colorGrey400">#bdbdbd</color>
+    <color name="colorGrey00">#b8baba</color>
+
+    <!--    google-->
+    <color name="arc_blue">#ffffff</color>
+    <color name="color_fff">#ffffff</color>
+</resources>
